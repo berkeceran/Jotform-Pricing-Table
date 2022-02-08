@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,500,400,300,800);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+input,
+p,
+a {
+  font-family: "Open Sans";
+  margin: 0px;
+}
+/*
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+*/
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+
+/*
+.row {
+  margin: 100px 600px;
+  max-width: 1400px;
+  max-height: 1000px;
+  overflow: auto;
+}
+*/
+.pricing-table {
+  background-color: #fff;
+  margin: 50px 50px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  border-radius: 0px 10px 0px 10px;
+  overflow: hidden;
+  position: relative;
+  min-height: 250px;
+  transition: all ease-in-out 0.25s;
+}
+.pricing-table:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+/*
+.pricing-table.zero .price {
+  background-color: #28b6f6;
+  color: #fff;
+}
+.pricing-table.one .price {
+  background-color: #ff9f00;
+  color: #fff;
+}
+.pricing-table.two .price {
+  background-color: #c3185c;
+  color: #fff;
+}
+*/
+
+.pricing-table .pricing-table-header {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px 0px 0px 20px;
+  position: absolute;
+  z-index: 5;
+}
+.pricing-table .pricing-table-header p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+.pricing-table .pricing-table-header::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  right: -180px;
+  height: 125px;
+  top: -50px;
+  background-color: #212121;
+  z-index: -1;
+  transform: rotate(-20deg);
+}
+
+.pricing-table .price {
+  position: absolute;
+  top: 0px;
+  text-align: right;
+  padding: 100px 20px 0px 0px;
+  right: 0px;
+  left: 0px;
+  font-size: 20px;
+  z-index: 4;
+}
+
+.pricing-table .price::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 100px;
+  bottom: -25px;
+  background-color: inherit;
+  transform: skewY(10deg);
+  z-index: -1;
+  box-shadow: 0px 5px 0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-table .pricing-body {
+  padding: 20px;
+  padding-top: 200px;
+}
+.pricing-table .pricing-table-ul li {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table .view-more {
+  margin-top: 10%;
+  margin-left: 15%;
+  display: block;
+  text-align: center;
+  background-color: #d38deb;
+  padding: 10px 45px;
+  font-weight: bold;
+  color: #504a52;
+  border-radius: 15px 15px 15px 15px;
+}
+.pricing-table .Sign-up {
+  margin-top: 10%;
+  margin-left: 15%;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  background-color: #7ecca7;
+  padding: 10px 50px;
+  color: #504a52;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.close-btn {
+  position: absolute;
+  padding: 5px;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+  outline: none;
+  margin-top: -30px;
+  margin-left: 130px;
+
+  background: linear-gradient(
+    90deg,
+    rgb(38, 224, 224) 0%,
+    rgb(183, 194, 31) 100%
+  );
+  text-transform: capitalize;
+}
+
+.campaign-asset {
+  font-weight: bold;
+}

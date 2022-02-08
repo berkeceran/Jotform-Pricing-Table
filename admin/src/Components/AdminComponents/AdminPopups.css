@@ -1,0 +1,58 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
+  background-color: rgba(18, 22, 33, 0.9);
+}
+.popup-inner {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 496px;
+  overflow: hidden;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: visible;
+  max-height: 100%;
+}
+
+.popup-container {
+  position: relative;
+}
+
+.popup-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2B3245;
+    line-height: 40px;
+    padding: 16px 32px;
+}
+
+.popup-content {
+  padding: 16px;
+}
+
+.close-btn {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 9.414214l-6.2928932 6.292893c-.3905243.390524-1.0236893.390524-1.4142136 0-.3905243-.390525-.3905243-1.023689 0-1.414214L6.5857864 8 .2928932 1.707107c-.3905243-.390525-.3905243-1.023689 0-1.414214.3905243-.390524 1.0236893-.390524 1.4142136 0L8 6.585786 14.2928932.292893c.3905243-.390524 1.0236893-.390524 1.4142136 0 .3905243.390525.3905243 1.023689 0 1.414214L9.4142136 8l6.2928932 6.292893c.3905243.390525.3905243 1.023689 0 1.414214-.3905243.390524-1.0236893.390524-1.4142136 0L8 9.414214z' fill='%238894AB' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E6EBF2;
+    background-size: 16px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+    cursor: pointer;
+}

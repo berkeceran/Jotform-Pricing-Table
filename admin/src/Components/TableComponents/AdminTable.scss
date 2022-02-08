@@ -1,0 +1,65 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td{
+  border: 1px solid #dee1e2;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #F5F7FF;
+}
+
+table th {
+  font-size: 12px;
+  background-color: #F8FBFF;
+  border: 1px solid #dee1e2;
+  color: #57647E;
+  text-align: left;
+  line-height: 24px;
+  padding: 8px 16px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 35%;
+}
+
+.color-icon {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  margin-left: 40%;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+.add-subscription, .submit {
+  color: #01BD6F;
+  border: 1px solid #01BD6F;
+  margin-top: 16px;
+
+  &:hover {
+    color: #fff;
+    background-color: #01BD6F;
+  }
+}

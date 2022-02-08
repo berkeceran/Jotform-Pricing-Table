@@ -1,0 +1,54 @@
+{
+  "name": "react-staj-proje",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://b-ceran.jotform.dev/intern/jr-revenue/admin/",
+  "dependencies": {
+    "@auth0/auth0-react": "^1.5.0",
+    "@blueprintjs/core": "^3.45.0",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.16.3",
+    "bootstrap": "^4.6.0",
+    "hex-to-color-name": "^1.0.1",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-color": "^2.19.3",
+    "react-datepicker": "^4.1.1",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
+    "react-switch": "^6.0.0",
+    "react-table": "^7.7.0",
+    "typeface-roboto": "^1.1.13",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
